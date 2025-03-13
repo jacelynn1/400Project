@@ -73,6 +73,12 @@ javadoc {
     options.overview = "src/main/javadoc/overview.html"
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.coveros.training.Main'
+    }
+}
+
 repositories {
     mavenCentral()
 }
